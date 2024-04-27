@@ -1,0 +1,14 @@
+<ul>
+  {% for manager_item in manager_items %}
+  <li>
+    <a href=" {% url 'manager_app:detail' pk=manager_item.pk %}">
+    {{ manager_item.title }}
+    {% if manager_item.done %}
+      ✅
+    {% else %}
+      ❌
+    {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

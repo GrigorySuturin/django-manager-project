@@ -1,0 +1,11 @@
+{% extends "manager_app/base.html" %}
+
+{% block title %}
+  Manager App
+{% endblock title %}
+
+{% block body %}
+  <h1>Manager App</h1>
+  <h2>Tasks: </h2>
+  {% include "manager_app/components/manager_items_list.html" %}
+{% endblock body %}

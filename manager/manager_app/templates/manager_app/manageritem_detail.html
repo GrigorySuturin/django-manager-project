@@ -1,0 +1,13 @@
+{% extends "manager_app/base.html" %}
+
+{% block title %}
+  Manager #{{ object.pk }}
+{% endblock title %}
+
+{% block body %}
+  <h3>Task:</h3>
+  <div>
+    <div>Title: <strong>{{ object.title }}</strong></div>
+    <div>Done: <strong>{{ object.done }}</strong></div>
+  </div>
+{% endblock body %}
